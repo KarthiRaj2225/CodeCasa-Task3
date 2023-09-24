@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  height: 60vh;
+  background: linear-gradient(135deg, hsl(0, 68%, 52%), #e78d06);
+  overflow: hidden;
+}
+html {
+  font-size: 16px;
+}
+.title {
+  top: 50%;
+  left: 50%;
+  color: aliceblue;
+  padding: 10px;
+  font-size: 20px;
+
+}
+.title::first-line {
+  font-size: 200%;
+
+}
+
+#man{
+  margin-top: 10px;
+}
+  
+
+.pictureleft{
+  margin-top: 50px;
+  position: relative;
+  bottom: 0px;
+}
+.wrapper {
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -40%);
+ 
+  top: 55%;
+  left: 50%;
+}
+.container {
+  width: 55vmin;
+  height: 55vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vmin;
+}
+.button-option {
+  background: #ffffff;
+  height: 17vmin;
+  width: 17vmin;
+  border: none;
+  border-radius: 30px;
+  font-size: 10vmin;
+  color: rgba(23, 2, 206, 0.849);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#restart {
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #0a0027;
+  color: #ffffff;
+  border: none;
+  position: relative;
+  margin: 1.5em auto 0 auto;
+  display: block;
+}
+.popup {
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10 em;
+  font-size: 12vmin;
+}
+#new-game {
+  font-size: 0.6em;
+  padding: 0.5em 1em;
+  background-color: #0a0027;
+  color: #ffffff;
+  border-radius: 0.2em;
+  border: none;
+}
+#message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+}
+.popup.hide {
+  display: none;
+}
